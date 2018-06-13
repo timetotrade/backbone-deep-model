@@ -1,6 +1,6 @@
 {
-  "name": "@kahwee/backbone-deep-model",
-  "version": "2.0.2",
+  "name": "@timetotrade/backbone-deep-model",
+  "version": "2.0.3",
   "description": "Improved support for models with nested attributes.",
   "author": {
     "name": "Charles Davison"
@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "backbone": "^1.0.0",
-    "jquery": "^2.1.3",
     "lodash.clonedeep": "^4.0.1",
     "lodash.merge": "^4.0.1",
     "underscore": "^1.8.2"
@@ -34,7 +33,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:kahwee/backbone-deep-model.git"
+    "url": "git@github.com:timetotrade/backbone-deep-model.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "license": "MIT"
 }
