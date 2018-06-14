@@ -4,7 +4,7 @@ try {
 	var _ = window._;
 }
 try {
-	var Backbone = require('backbone');
+	var Backbone = require('@timetotrade/backbone');
 } catch (e) {
 	var Backbone = window.Backbone;
 }
