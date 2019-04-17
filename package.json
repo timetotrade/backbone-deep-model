@@ -1,6 +1,6 @@
 {
   "name": "@timetotrade/backbone-deep-model",
-  "version": "4.0.0",
+  "version": "3.0.0",
   "description": "Improved support for models with nested attributes.",
   "author": {
     "name": "Charles Davison"
