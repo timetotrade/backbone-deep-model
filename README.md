@@ -1,6 +1,6 @@
 ## backbone-deep-model
 
-[![npm version](https://badge.fury.io/js/%timetotrade%2Fbackbone-deep-model.svg)](https://badge.fury.io/js/%timetotrade%2Fbackbone-deep-model)
+[![npm version](https://badge.fury.io/js/%40timetotrade%2Fbackbone-deep-model.svg)](https://badge.fury.io/js/%40timetotrade%2Fbackbone-deep-model)
 
 Forked from https://github.com/kahwee/backbone-deep-model (Thanks for the wonderful work @powmedia and @kahwee), simply removes the jQuery dependency
 
