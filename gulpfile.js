@@ -10,7 +10,7 @@ var wrap = require('gulp-wrap');
 
 var name = require('./package.json').name;
 
-gulp.task('browserify', function() {
+gulp.task('browserify', gulp.series(function() {
 	var bundler = browserify({
 		entries: ['./src/browser.js']
 	});
@@ -18,6 +18,7 @@ gulp.task('browserify', function() {
 		return bundler
 			.exclude('backbone')
 			.exclude('underscore')
+			.exclude('jquery')
 			.exclude('lodash')
 			.bundle()
 			.pipe(source(name + '.js'))
@@ -29,6 +30,6 @@ gulp.task('browserify', function() {
 	};
 
 	return bundle();
-});
+}));
 
-gulp.task('default', ['browserify']);
+gulp.task('default', gulp.series('browserify'));
