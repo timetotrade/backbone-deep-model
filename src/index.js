@@ -138,13 +138,7 @@ var DeepModel = Backbone.Model.extend({
 		this.attributes = {};
 		if (options && options.collection) this.collection = options.collection;
 		if (options && options.parse) attrs = this.parse(attrs, options) || {};
-		try {
-			attrs = merge({}, cloneDeep(_.result(this, 'defaults')), attrs);
-		} catch(e) {
-			console.error('clone error %o', e);
-			throw new Error('Failed to clone attributes ' + e.message);
-		}
-
+		attrs = merge({}, cloneDeep(_.result(this, 'defaults')), attrs);
 		this.set(attrs, options);
 		this.changed = {};
 		this.initialize.apply(this, arguments);
